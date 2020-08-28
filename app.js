@@ -9,6 +9,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+initCors();
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -32,5 +34,28 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+function initCors() {
+  const whitelist = [
+    "http://localhost:3000",
+  ];
+  const corsOptions = {
+    credentials: true,
+    origin: function(origin, callback) {
+      console.log(origin);
+      if (whitelist.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    }
+  };
+
+  app.use(cors(corsOptions));
+
+  app.use(function(req, res, next) {
+    res.set("Access-Control-Allow-Credentials", true);
+    next();
+  });
+}
 
 module.exports = app;

@@ -5,8 +5,8 @@ const users = [
     lastName: 'Hatfield',
     email: 'james@gmail.com',
     coordinate: {
-      lat: null,
-      lng: null
+      lat: 57,
+      lng: 78
     },
     avatar: 'https://avatars2.githubusercontent.com/u/53490035?s=60&v=4',
   },
@@ -16,8 +16,8 @@ const users = [
     lastName: 'Hammet',
     email: 'kirk@gmail.com',
     coordinate: {
-      lat: null,
-      lng: null
+      lat: 23,
+      lng: 54
     },
     avatar: 'https://avatars2.githubusercontent.com/u/53490035?s=60&v=4'
   },
@@ -27,8 +27,8 @@ const users = [
     lastName: 'Ulrich',
     email: 'lars@gmail.com',
     coordinate: {
-      lat: null,
-      lng: null
+      lat: 58,
+      lng: 0
     },
     avatar: 'https://avatars2.githubusercontent.com/u/53490035?s=60&v=4'
   },
@@ -38,8 +38,8 @@ const users = [
     lastName: 'Trujillo',
     email: 'rob@gmail.com',
     coordinate: {
-      lat: null,
-      lng: null
+      lat: 78,
+      lng: 12
     },
     avatar: 'https://avatars2.githubusercontent.com/u/53490035?s=60&v=4'
   },
@@ -49,8 +49,8 @@ const users = [
     lastName: 'Burton',
     email: 'cliff@gmail.com',
     coordinate: {
-      lat: null,
-      lng: null
+      lat: 52,
+      lng: 23
     },
     avatar: 'https://avatars2.githubusercontent.com/u/53490035?s=60&v=4'
   }
